@@ -1,7 +1,9 @@
 package Test_1;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -15,11 +17,11 @@ String path="C:\\Users\\uSER\\eclipse-workspace\\Project_New\\dataxl\\New Micros
     FileInputStream sf=new FileInputStream(path);
     XSSFWorkbook wb=new  XSSFWorkbook(sf);
     
-    String data1=wb.getSheet("Sheet1").getRow(0).getCell(1).getStringCellValue();
+    String data1=wb.getSheet("Sheet1").getRow(0).getCell(0).getStringCellValue();
     System.out.println(data1);
     
     
-    
+   
 
 	}
 
